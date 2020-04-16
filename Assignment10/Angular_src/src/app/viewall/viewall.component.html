@@ -1,0 +1,12 @@
+<table class="table table-primary table-striped table-hover col-md-8 mx-auto mt-3">
+<tr>
+  <th>Account ID</th>
+  <th>Customer name</th>
+  <th>Balance</th>
+</tr>
+<tr *ngFor="let acc of accounts">
+  <td>{{acc.accId}}</td>
+  <td>{{acc.custName | titlecase}}</td>
+  <td>{{acc.balance | currency:'INR'}}</td>
+</tr>
+</table>
